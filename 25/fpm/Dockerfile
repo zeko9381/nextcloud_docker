@@ -7,9 +7,8 @@ RUN set -ex; \
     apt-get update; \
     apt-get install -y --no-install-recommends \
         ffmpeg \
-        gnu-libiconv \
         imagemagick \
-        libxml2 \
+        ghostscript \
         rsync \
         bzip2 \
         busybox-static \
