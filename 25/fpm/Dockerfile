@@ -1,11 +1,15 @@
 # DO NOT EDIT: created by update.sh from Dockerfile-debian.template
 FROM php:8.1-fpm-bullseye
 
-# entrypoint.sh and cron.sh dependencies
+# entrypoint.sh and cron.sh dependencies and extras
 RUN set -ex; \
     \
     apt-get update; \
     apt-get install -y --no-install-recommends \
+        ffmpeg \
+        gnu-libiconv \
+        imagemagick \
+        libxml2 \
         rsync \
         bzip2 \
         busybox-static \
